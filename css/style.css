@@ -1,6 +1,8 @@
 .rTable
 {
 	display: table;
+	table-layout: fixed;	/* Make same with every cell. */
+	width: 50%;
 }
 
 .rTableRow
@@ -11,5 +13,9 @@
 .rTableCell
 {
 	display: table-cell;
+	border: 1px solid #999999;
+	color: blue;
+	text-align: center;
+	padding: 5% 0px;
 }
 
