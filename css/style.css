@@ -3,6 +3,7 @@
 	display: table;
 	table-layout: fixed;	/* Make same with every cell. */
 	width: 50%;
+	background-color: #f7ebe1;
 }
 
 .rTableRow
@@ -16,7 +17,19 @@
 	border: 1px solid #999999;
 	color: blue;
 	text-align: center;
+	color: #a05151;
 	padding: 5% 0px;
 	cursor: hand;
+	font-size: 30pt;
+}
+
+.rTableCell:hover
+{
+	background-color: #ffd8b7;
+}
+
+.emptyCell
+{
+	background-color: #e2ddd9;
 }
 
