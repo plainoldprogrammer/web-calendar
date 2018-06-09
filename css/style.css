@@ -1,10 +1,15 @@
-div
+.rTable
 {
-	display: inline;
+	display: table;
 }
 
-.row-calendar
+.rTableRow
 {
-	display: block;
+	display: table-row;
+}
+
+.rTableCell
+{
+	display: table-cell;
 }
 
