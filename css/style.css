@@ -38,3 +38,12 @@
 	display: inline;
 }
 
+button
+{
+	cursor: hand;
+	margin-top: 8px;
+	padding: .7%;
+	margin-right: 8px;
+	font-weight: bold;
+}
+
