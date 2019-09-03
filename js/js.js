@@ -57,6 +57,7 @@ function updateCalendar(days)
 		elements[4].getElementsByClassName("rTableCell")[2].innerHTML = "";
 		elements[4].getElementsByClassName("rTableCell")[1].innerHTML = "";
 		elements[4].getElementsByClassName("rTableCell")[0].innerHTML = "";
+		elements[4].style.height = "109.33px";
 	}
 	else if (days === 31)
 	{
