@@ -57,6 +57,9 @@ function updateCalendar(days)
 		elements[4].getElementsByClassName("rTableCell")[2].innerHTML = "";
 		elements[4].getElementsByClassName("rTableCell")[1].innerHTML = "";
 		elements[4].getElementsByClassName("rTableCell")[0].innerHTML = "";
+		elements[4].getElementsByClassName("rTableCell")[2].style.background = "#e2ddd9";
+		elements[4].getElementsByClassName("rTableCell")[1].style.background = "#e2ddd9";
+		elements[4].getElementsByClassName("rTableCell")[0].style.background = "#e2ddd9";
 		elements[4].style.height = "109.33px";
 	}
 	else if (days === 31)
@@ -65,6 +68,9 @@ function updateCalendar(days)
 		elements[4].getElementsByClassName("rTableCell")[0].innerHTML = "29";
 		elements[4].getElementsByClassName("rTableCell")[1].innerHTML = "30";
 		elements[4].getElementsByClassName("rTableCell")[2].innerHTML = "31";
+		elements[4].getElementsByClassName("rTableCell")[0].style.background = "#f7ebe1";
+		elements[4].getElementsByClassName("rTableCell")[1].style.background = "#f7ebe1";
+		elements[4].getElementsByClassName("rTableCell")[2].style.background = "#f7ebe1";
 	}
 	else if (days === 30)
 	{
@@ -72,6 +78,7 @@ function updateCalendar(days)
 		elements[4].getElementsByClassName("rTableCell")[0].innerHTML = "29";
 		elements[4].getElementsByClassName("rTAbleCell")[1].innerHTML = "30";
 		elements[4].getElementsByClassName("rTableCell")[2].innerHTML = "";
+		elements[4].getElementsByClassName("rTableCell")[2].style.background = "#e2ddd9";
 	}
 }
 
