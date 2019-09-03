@@ -26,6 +26,7 @@ function getNextMonth()
 	{
 		currentMonth++;
 		console.log(Object.keys(months)[currentMonth] + ": " + months[Object.keys(months)[currentMonth]]);
+		document.getElementById("month-name").innerHTML = Object.keys(months)[currentMonth];
 	}
 }
 
@@ -38,6 +39,7 @@ function getPreviousMonth()
 	{
 		currentMonth--;
 		console.log(Object.keys(months)[currentMonth] + ": " + months[Object.keys(months)[currentMonth]]);
+		document.getElementById("month-name").innerHTML = Object.keys(months)[currentMonth];
 	}
 }
 
