@@ -27,6 +27,8 @@ function getNextMonth()
 		currentMonth++;
 		console.log(Object.keys(months)[currentMonth] + ": " + months[Object.keys(months)[currentMonth]]);
 		document.getElementById("month-name").innerHTML = Object.keys(months)[currentMonth];
+
+		updateCalendar(months[Object.keys(months)[currentMonth]]);
 	}
 }
 
@@ -40,6 +42,35 @@ function getPreviousMonth()
 		currentMonth--;
 		console.log(Object.keys(months)[currentMonth] + ": " + months[Object.keys(months)[currentMonth]]);
 		document.getElementById("month-name").innerHTML = Object.keys(months)[currentMonth];
+
+		updateCalendar(months[Object.keys(months)[currentMonth]]);
+	}
+}
+
+function updateCalendar(days)
+{
+	console.log("Update to: " + days);
+
+	if (days === 28)
+	{
+		var elements = document.getElementsByClassName("rTableRow");
+		elements[4].getElementsByClassName("rTableCell")[2].innerHTML = "";
+		elements[4].getElementsByClassName("rTableCell")[1].innerHTML = "";
+		elements[4].getElementsByClassName("rTableCell")[0].innerHTML = "";
+	}
+	else if (days === 31)
+	{
+		var elements = document.getElementsByClassName("rTableRow");
+		elements[4].getElementsByClassName("rTableCell")[0].innerHTML = "29";
+		elements[4].getElementsByClassName("rTableCell")[1].innerHTML = "30";
+		elements[4].getElementsByClassName("rTableCell")[2].innerHTML = "31";
+	}
+	else if (days === 30)
+	{
+		var elements = document.getElementsByClassName("rTableRow");
+		elements[4].getElementsByClassName("rTableCell")[0].innerHTML = "29";
+		elements[4].getElementsByClassName("rTAbleCell")[1].innerHTML = "30";
+		elements[4].getElementsByClassName("rTableCell")[2].innerHTML = "";
 	}
 }
 
