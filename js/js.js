@@ -29,5 +29,15 @@ function getNextMonth()
 	}
 }
 
-// console.log(months[Object.keys(months)[1]]);
+var previousMonthButton = document.getElementById("previous-month");
+previousMonthButton.addEventListener("click", getPreviousMonth);
+
+function getPreviousMonth()
+{
+	if (currentMonth <= 11 && currentMonth >= 1)
+	{
+		currentMonth--;
+		console.log(Object.keys(months)[currentMonth] + ": " + months[Object.keys(months)[currentMonth]]);
+	}
+}
 
