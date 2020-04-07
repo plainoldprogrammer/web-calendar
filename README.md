@@ -1,2 +1,3 @@
-# web-calendar
-A pure HTML, CSS and JavaScript web calendar.
+# Web Calendar
+
+**Web Calendar** is a simple *HTML, JavaScript* and *CSS* calendar.
