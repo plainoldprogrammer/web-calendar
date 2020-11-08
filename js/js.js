@@ -15,6 +15,29 @@ var months = {
 	Dec: 31
 };
 
+function loadJSON(callback) {
+  var xobj = new XMLHttpRequest();
+  xobj.overrideMimeType("data.json");
+  xobj.open('GET', './js/data.json', false);
+  xobj.onreadystatechange = function () {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      callback(xobj.responseText);
+    }
+  };
+  xobj.send(null);
+}
+
+function loadData() {
+  loadJSON(function(response) {
+    result = JSON.parse(response);
+  });
+}
+
+let result;
+console.log('Calling to load data');
+loadData(result)
+console.log(result);
+
 var currentMonth = 0;
 
 var nextMonthButton = document.getElementById("next-month");
